@@ -1,0 +1,17 @@
+{
+  "name": "open-cart",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.48.1",
+    "@types/node": "^22.8.0"
+  },
+  "scripts": {
+    "pw:test":"BASE_URL=https://awesomeqa.com/ playwright test"
+  },
+  "dependencies": {
+    "fakerator": "^0.3.6",
+    "playwright": "^1.48.1"
+  }
+}
