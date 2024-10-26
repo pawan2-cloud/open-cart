@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Playwright Tests(Pull Request)
 on:
   pull_request:
     branches: [ main, master ]
