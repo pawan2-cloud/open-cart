@@ -7,7 +7,7 @@ let getUserData = require(filePath);
 let getUpdatedUserData;
 
 // create a user
-export const createUser = function async() {
+export const createUser = ()=> {
   try {
     const password = fakerator.internet.password(10);
     getUserData.push({
@@ -19,7 +19,6 @@ export const createUser = function async() {
       phone: fakerator.phone.number(),
     });
     getUpdatedUserData = require(filePath);
-    console.log()
     if (getUserData.length < getUpdatedUserData.length) {
       throw "Unable to add user to fixture";
     }
@@ -30,7 +29,7 @@ export const createUser = function async() {
 };
 
 //cleanUp or delete a user
-export const cleanUpUser = async () => {
+export const cleanUpUser = () => {
   try {
       getUserData.pop();
       fs.writeFile(
